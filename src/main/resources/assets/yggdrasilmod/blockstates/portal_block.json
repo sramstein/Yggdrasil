@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "":  { "model": "yggdrasilmod:item/portal_block"}
+  }
+}
