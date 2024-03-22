@@ -14,6 +14,9 @@ public class ModItems {
 
     public static final Item HELHEIM_GEMSTONE = registerItem("helheim_gemstone",
             new Item(new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+
+    public static final Item VALHOLL_GEMSTONE = registerItem("valholl_gemstone",
+            new Item(new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(YggdrasilMod.MOD_ID, name), item);
     }
