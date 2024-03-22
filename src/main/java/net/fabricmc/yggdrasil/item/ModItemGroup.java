@@ -8,5 +8,5 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
     public static final ItemGroup YGGDRASIL = FabricItemGroupBuilder.build(new Identifier(YggdrasilMod.MOD_ID, "yggdrasil"),
-            () -> new ItemStack(ModItems.GEMSTONE_JOTUNHEIM));
+            () -> new ItemStack(ModItems.HELHEIM_GEMSTONE));
 }

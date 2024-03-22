@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "yggdrasilmod:item/gemstone_jotunheim"
+    "layer0": "yggdrasilmod:item/jotunheim_gemstone"
   }
 }
