@@ -1,29 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "yggdrasil",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Yggdrasil Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Corentin Piquet",
+    "Sacha Ramstein",
+    "Antoine Grand",
+    "Gabin Pinos",
+    "Xavier Rognon"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "MIT",
+  "icon": "assets/yggdrasil/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.fabricmc.yggdrasil.YggdrasilMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "yggdrasil.mixins.json"
   ],
 
   "depends": {
