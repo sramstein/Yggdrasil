@@ -10,7 +10,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static final Item GEMSTONE_JOTUNHEIM = registerItem("gemstone_jotunheim",
-        new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+        new Item(new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
     private static Item registerItem (String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(YggdrasilMod.MOD_ID, name), item);
     }
