@@ -8,6 +8,7 @@ import net.fabricmc.yggdrasil.mob.ModEntities;
 import net.fabricmc.yggdrasil.mob.client.RaccoonRenderer;
 import net.fabricmc.yggdrasil.util.ModRegistries;
 import net.fabricmc.yggdrasil.world.dimension.ModDimension;
+import net.fabricmc.yggdrasil.world.structure.ModStructures;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.geckolib3.GeckoLib;
@@ -31,5 +32,6 @@ public class YggdrasilMod implements ModInitializer {
 		ModRegistries.registerModStuffs();
 		EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
 		GeckoLib.initialize();
+		ModStructures.registerStructureFeatures();
 	}
 }
