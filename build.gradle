@@ -17,6 +17,9 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven { url 'https://maven.kyrptonaught.dev'}
+
+	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+
 }
 
 dependencies {
@@ -27,6 +30,9 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	//Spawn mob
+	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.18:3.0.35'
 
 	// Portal API
 	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta52-1.18'

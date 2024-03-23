@@ -1,8 +1,12 @@
 package net.fabricmc.yggdrasil;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.yggdrasil.block.ModBlocks;
 import net.fabricmc.yggdrasil.item.ModItems;
+import net.fabricmc.yggdrasil.mob.ModEntities;
+import net.fabricmc.yggdrasil.mob.client.RaccoonRenderer;
+import net.fabricmc.yggdrasil.util.ModRegistries;
 import net.fabricmc.yggdrasil.world.dimension.ModDimension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,5 +27,7 @@ public class YggdrasilMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModDimension.register();
+		ModRegistries.registerModStuffs();
+		EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
 	}
 }
