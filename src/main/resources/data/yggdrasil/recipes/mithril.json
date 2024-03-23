@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "yggdrasilmod:mithril_block"
+    }
+  ],
+  "result": {
+    "item": "yggdrasilmod:mithril",
+    "count": 9
+  }
+}

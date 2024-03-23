@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "yggdrasilmod:mithril"
+    }
+  },
+  "result": {
+    "item": "yggdrasilmod:mithril_block"
+  }
+}
