@@ -20,6 +20,10 @@ public class ModItems {
     public static final Item VALHOLL_GEMSTONE = registerItem("valholl_gemstone",
             new Item(new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
 
+    public static final Item MITHRIL = registerItem("mithril",
+            new Item(new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+
+
     public static final Item RACCOON_SPAWN_EGG = registerItem("raccoon_spawn_egg",
             new SpawnEggItem(ModEntities.RACCOON, 0x948e8d, 0x3b3635,
                     new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));

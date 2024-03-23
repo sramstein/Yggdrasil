@@ -22,6 +22,13 @@ public class ModBlocks {
     public static final Block ANCIENT_STONE = registerBlock("ancient_stone",
             new AncientStone(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
 
+    public static final Block MITHRIL_ORE = registerBlock("mithril_ore",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(7f).nonOpaque()), ModItemGroup.YGGDRASIL);
+
+    public static final Block MITHRIL_BLOCK = registerBlock("mithril_block",
+            new Block(FabricBlockSettings.of(Material.STONE).strength(7f).nonOpaque()), ModItemGroup.YGGDRASIL);
+
+
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(YggdrasilMod.MOD_ID, name), block);
