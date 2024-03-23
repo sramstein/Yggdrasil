@@ -8,7 +8,7 @@
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "minecraft:snowy_plains",
+          "biome": "yggdrasil:jotunheim_plains",
           "parameters": {
             "temperature": [
               -2,
@@ -26,7 +26,7 @@
           }
         },
         {
-          "biome": "minecraft:snowy_taiga",
+          "biome": "yggdrasil:jotunheim_taiga",
           "parameters": {
             "temperature": [
               0,
@@ -44,7 +44,7 @@
           }
         },
         {
-          "biome": "minecraft:ice_spikes",
+          "biome": "yggdrasil:jotunheim_ice_spike",
           "parameters": {
             "temperature": [
               0,
@@ -53,6 +53,24 @@
             "humidity": [
               -2,
               0
+            ],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "yggdrasil:jotunheim_slopes",
+          "parameters": {
+            "temperature": [
+              -2,
+              -1
+            ],
+            "humidity": [
+              -2,
+              -1
             ],
             "continentalness": 0,
             "erosion": 0,
