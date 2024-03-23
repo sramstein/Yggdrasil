@@ -10,6 +10,7 @@ import net.fabricmc.yggdrasil.util.ModRegistries;
 import net.fabricmc.yggdrasil.world.dimension.ModDimension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import software.bernie.geckolib3.GeckoLib;
 
 public class YggdrasilMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -29,5 +30,6 @@ public class YggdrasilMod implements ModInitializer {
 		ModDimension.register();
 		ModRegistries.registerModStuffs();
 		EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
+		GeckoLib.initialize();
 	}
 }

@@ -13,7 +13,7 @@ public class ModEntities {
     public static final EntityType<RaccoonEntity> RACCOON = Registry.register(
             Registry.ENTITY_TYPE,
             new Identifier(YggdrasilMod.MOD_ID, "raccoon"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, RaccoonEntity::new)
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, RaccoonEntity::new)
                     .dimensions(EntityDimensions.fixed(1.0f, 1.0f)).build()
     );
 }

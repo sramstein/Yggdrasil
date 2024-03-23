@@ -11,5 +11,6 @@ public class ModRegistries {
     }
     private static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.RACCOON, RaccoonEntity.setAttribute());
+
     }
 }
