@@ -1,0 +1,67 @@
+{
+  "type": "yggdrasil:jotunheim",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": -787893,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "minecraft:snowy_plains",
+          "parameters": {
+            "temperature": [
+              -2,
+              0
+            ],
+            "humidity": [
+              0,
+              2
+            ],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:snowy_taiga",
+          "parameters": {
+            "temperature": [
+              0,
+              2
+            ],
+            "humidity": [
+              0,
+              2
+            ],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:ice_spikes",
+          "parameters": {
+            "temperature": [
+              0,
+              0
+            ],
+            "humidity": [
+              -2,
+              0
+            ],
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

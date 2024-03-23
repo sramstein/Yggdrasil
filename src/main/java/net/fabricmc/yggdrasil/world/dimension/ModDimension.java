@@ -8,12 +8,12 @@ import net.minecraft.world.World;
 import net.minecraft.world.dimension.DimensionType;
 
 public class ModDimension {
-    public static final RegistryKey<World> YGGDRASIL_DIMENSION_KEY = RegistryKey.of(Registry.WORLD_KEY,
-            new Identifier(YggdrasilMod.MOD_ID, "yggdrasil"));
-    public static final RegistryKey<DimensionType> YGGDRASIL_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
-            YGGDRASIL_DIMENSION_KEY.getValue());
+    public static final RegistryKey<World> JOTUNHEIM_DIMENSION_KEY = RegistryKey.of(Registry.WORLD_KEY,
+            new Identifier(YggdrasilMod.MOD_ID, "jotunheim"));
+    public static final RegistryKey<DimensionType> JOTUNHEIM_TYPE_KEY = RegistryKey.of(Registry.DIMENSION_TYPE_KEY,
+            JOTUNHEIM_DIMENSION_KEY.getValue());
 
     public static void register() {
-        YggdrasilMod.LOGGER.debug("Registering Dimension for " + YggdrasilMod.MOD_ID);
+        YggdrasilMod.LOGGER.debug("Registering ModDimension for " + YggdrasilMod.MOD_ID);
     }
 }
