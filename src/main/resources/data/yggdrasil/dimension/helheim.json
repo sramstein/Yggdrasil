@@ -1,0 +1,12 @@
+{
+  "type": "yggdrasil:helheim",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": -787893,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "minecraft:dark_forest"
+    }
+  }
+}
