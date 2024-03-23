@@ -23,10 +23,10 @@ public class ModBlocks {
             new AncientStone(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
 
     public static final Block MITHRIL_ORE = registerBlock("mithril_ore",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(7f).nonOpaque()), ModItemGroup.YGGDRASIL);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f)), ModItemGroup.YGGDRASIL);
 
     public static final Block MITHRIL_BLOCK = registerBlock("mithril_block",
-            new Block(FabricBlockSettings.of(Material.STONE).strength(7f).nonOpaque()), ModItemGroup.YGGDRASIL);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(6f)), ModItemGroup.YGGDRASIL);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
