@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "yggdrasilmod:mithril_ore",
-    "yggdrasilmod:mithril_block"
+    "yggdrasilmod:mithril_block",
+    "yggdrasilmod:deepslate_mithril_ore"
   ]
 }
