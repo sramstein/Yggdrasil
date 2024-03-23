@@ -3,7 +3,7 @@
   "generator": {
     "type": "minecraft:noise",
     "seed": -787893,
-    "settings": "minecraft:overworld",
+    "settings": "yggdrasil:jotunheim_settings",
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [
