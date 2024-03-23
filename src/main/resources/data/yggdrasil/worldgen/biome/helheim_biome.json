@@ -4,8 +4,8 @@
   "precipitation": "none",
   "category": "forest",
   "effects": {
-    "sky_color": 16718362,
-    "fog_color": 7282720,
+    "sky_color": 5573662,
+    "fog_color": 7935273,
     "water_color": 1452368,
     "water_fog_color": 329011,
     "grass_color_modifier": "dark_forest",
