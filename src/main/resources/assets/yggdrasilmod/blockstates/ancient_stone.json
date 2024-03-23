@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=east":  { "model": "yggdrasilmod:block/ancient_stone", "y": 180},
+    "facing=north":  { "model": "yggdrasilmod:block/ancient_stone", "y": 90},
+    "facing=south":  { "model": "yggdrasilmod:block/ancient_stone", "y":  270},
+    "facing=west":  { "model": "yggdrasilmod:block/ancient_stone"}
+  }
+}

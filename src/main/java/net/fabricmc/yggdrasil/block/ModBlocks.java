@@ -3,6 +3,7 @@ package net.fabricmc.yggdrasil.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.yggdrasil.YggdrasilMod;
+import net.fabricmc.yggdrasil.block.custom.AncientStone;
 import net.fabricmc.yggdrasil.block.custom.PortalBlock;
 import net.fabricmc.yggdrasil.item.ModItemGroup;
 import net.minecraft.block.Block;
@@ -22,7 +23,10 @@ public class ModBlocks {
             new PortalBlock(FabricBlockSettings.of(Material.PORTAL).strength(-1f).requiresTool()), ModItemGroup.YGGDRASIL);
 
     public static final Block HELHEIM_BLOCK = registerBlock("helheim_block",
-            new ObserverBlock(FabricBlockSettings.of(Material.STONE).strength(-1f)), ModItemGroup.YGGDRASIL);
+            new ObserverBlock(FabricBlockSettings.of(Material.STONE).strength(-1f).luminance(10)), ModItemGroup.YGGDRASIL);
+
+    public static final Block ANCIENT_STONE = registerBlock("ancient_stone",
+            new AncientStone(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
