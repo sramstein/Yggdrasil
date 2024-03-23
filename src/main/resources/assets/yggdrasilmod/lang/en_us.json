@@ -10,6 +10,7 @@
 
   "item.yggdrasilmod.mithril": "Mithril",
   "block.yggdrasilmod.mithril_ore": "Mithril Ore",
+  "block.yggdrasilmod.deepslate_mithril_ore": "DeepSlate Mithril Ore",
   "block.yggdrasilmod.mithril_block": "Mithril Block",
 
   "itemGroup.yggdrasilmod.yggdrasil": "Yggdrasil Tab"
