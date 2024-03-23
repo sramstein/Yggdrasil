@@ -1,13 +1,9 @@
 package net.fabricmc.yggdrasil.block.custom;
 
-import net.fabricmc.yggdrasil.YggdrasilMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.LiteralText;
@@ -50,11 +46,10 @@ public class PortalBlock extends Block {
                 entity.moveToWorld(serverWorld);
             }
         }
-        super.onSteppedOn(world, pos, state, entity);
     }
     @Override
     public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (world instanceof ServerWorld && !entity.hasVehicle() && !entity.hasPassengers() && entity.canUsePortals() && VoxelShapes.matchesAnywhere(VoxelShapes.cuboid(entity.getBoundingBox().offset((double)(-pos.getX()), (double)(-pos.getY()), (double)(-pos.getZ()))), state.getOutlineShape(world, pos), BooleanBiFunction.AND)) {
+        if (!world.isClient && entity instanceof PlayerEntity) {
             RegistryKey<World> registryKey = world.getRegistryKey() == World.END ? World.OVERWORLD : World.END;
             ServerWorld serverWorld = ((ServerWorld)world).getServer().getWorld(registryKey);
             if (serverWorld == null) {
