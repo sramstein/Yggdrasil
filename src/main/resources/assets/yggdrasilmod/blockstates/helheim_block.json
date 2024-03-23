@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=east":  { "model": "yggdrasilmod:block/helheim_block", "y": 270},
+    "facing=north":  { "model": "yggdrasilmod:block/helheim_block", "y": 180},
+    "facing=south":  { "model": "yggdrasilmod:block/helheim_block"},
+    "facing=west":  { "model": "yggdrasilmod:block/helheim_block", "y": 90},
+    "facing=up":  { "model": "yggdrasilmod:block/helheim_block"},
+    "facing=down":  { "model": "yggdrasilmod:block/helheim_block"}
+  }
+}

@@ -7,6 +7,8 @@ import net.fabricmc.yggdrasil.block.custom.PortalBlock;
 import net.fabricmc.yggdrasil.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.ObserverBlock;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -18,6 +20,9 @@ public class ModBlocks {
 
     public static final Block PORTAL_BLOCK = registerBlock("portal_block",
             new PortalBlock(FabricBlockSettings.of(Material.PORTAL).strength(-1f).requiresTool()), ModItemGroup.YGGDRASIL);
+
+    public static final Block HELHEIM_BLOCK = registerBlock("helheim_block",
+            new ObserverBlock(FabricBlockSettings.of(Material.STONE).strength(-1f)), ModItemGroup.YGGDRASIL);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
