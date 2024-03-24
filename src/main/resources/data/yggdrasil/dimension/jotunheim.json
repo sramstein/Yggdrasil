@@ -2,7 +2,7 @@
   "type": "yggdrasil:jotunheim",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 0,
+    "seed": 54818,
     "settings": "yggdrasil:jotunheim_settings",
     "biome_source": {
       "type": "minecraft:multi_noise",

@@ -4,7 +4,8 @@
   "package": "net.fabricmc.yggdrasil.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "StructureFeatureAccessor"
+    "StructureFeatureAccessor",
+    "CustomGeodeFeature"
   ],
   "client": [
     "ExampleMixin"
