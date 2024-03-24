@@ -10,8 +10,8 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    MITHRIL("mithril", 16, new int[]{2, 5, 7, 2}, 28,
-            SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0f, -0.2f, () -> Ingredient.ofItems(ModItems.MITHRIL));
+    MITHRIL("mithril", 16, new int[]{3, 6, 8, 3}, 28,
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 1.0f, -1f, () -> Ingredient.ofItems(ModItems.MITHRIL));
 
     private static final int[] BASE_DURABILITY;
     private final String name;

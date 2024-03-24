@@ -3,9 +3,7 @@ package net.fabricmc.yggdrasil.item;
 import net.fabricmc.yggdrasil.YggdrasilMod;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.yggdrasil.item.custom.ModAxeItem;
-import net.fabricmc.yggdrasil.item.custom.ModHoeItem;
-import net.fabricmc.yggdrasil.item.custom.ModPickaxeItem;
+import net.fabricmc.yggdrasil.item.custom.*;
 import net.fabricmc.yggdrasil.mob.ModEntities;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
@@ -43,7 +41,7 @@ public class ModItems {
             new ShovelItem(ModToolMaterials.MITHRIL, 0, 1f,
                     new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
     public static final Item MITHRIL_HELMET = registerItem("mithril_helmet",
-            new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.HEAD,
+            new ModArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
     public static final Item MITHRIL_CHESTPLATE = registerItem("mithril_chestplate",
             new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.CHEST,
@@ -52,7 +50,7 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
     public static final Item MITHRIL_BOOTS = registerItem("mithril_boots",
-            new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.FEET,
+            new ModBootsItem(ModArmorMaterials.MITHRIL, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
 
 
