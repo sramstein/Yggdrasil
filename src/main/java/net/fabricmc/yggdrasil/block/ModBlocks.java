@@ -38,7 +38,8 @@ public class ModBlocks {
             new MithrilBlock(FabricBlockSettings.of(Material.METAL).strength(5.0f).requiresTool()), ModItemGroup.YGGDRASIL);
 
     public static final Block ANTARCTICITE_BLOCK = registerBlock("antarcticite_block",
-            new AntarcticiteBlock(FabricBlockSettings.of(Material.STONE).strength(3.0f).requiresTool()), ModItemGroup.YGGDRASIL);
+            new AntarcticiteBlock(FabricBlockSettings.of(Material.STONE).strength(3.0f).requiresTool(),
+                    UniformIntProvider.create(1, 2)), ModItemGroup.YGGDRASIL);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {

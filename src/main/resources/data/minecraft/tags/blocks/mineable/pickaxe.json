@@ -3,6 +3,7 @@
   "values": [
     "yggdrasilmod:mithril_ore",
     "yggdrasilmod:mithril_block",
-    "yggdrasilmod:deepslate_mithril_ore"
+    "yggdrasilmod:deepslate_mithril_ore",
+    "yggdrasilmod:antarcticite_block"
   ]
 }

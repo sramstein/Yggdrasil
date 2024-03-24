@@ -26,5 +26,4 @@ public class MithrilOre extends OreBlock {
     public List<ItemStack> getDroppedStacks(BlockState state, LootContext.Builder builder) {
         return Collections.singletonList(new ItemStack(ModItems.MITHRIL));
     }
-
 }
