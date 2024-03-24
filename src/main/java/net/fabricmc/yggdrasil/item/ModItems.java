@@ -24,7 +24,7 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
 
     public static final Item MITHRIL_SWORD = registerItem("mithril_sword",
-            new SwordItem(ModToolMaterials.MITHRIL, 1, 2f,
+            new ModSlownessSwordItem(ModToolMaterials.MITHRIL, 1, 2f,
                     new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
 
     public static final Item MITHRIL_AXE = registerItem("mithril_axe",
