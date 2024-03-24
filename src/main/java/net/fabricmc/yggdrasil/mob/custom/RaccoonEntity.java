@@ -36,7 +36,7 @@ public class RaccoonEntity extends HostileEntity implements IAnimatable {
         return HostileEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 30.00)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 5.0f)
-                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 5.0f)
+                .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.4f);
 
 
@@ -46,7 +46,7 @@ public class RaccoonEntity extends HostileEntity implements IAnimatable {
         this.goalSelector.add(0, new MeleeAttackGoal(this, 1.0, false));
         this.goalSelector.add(2, new LookAroundGoal(this));
         this.goalSelector.add(7, new WanderAroundFarGoal(this, 1.0));
-        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 12.0f));
+        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
         this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
         this.targetSelector.add(2, new RevengeGoal(this, new Class[0]));
     }
