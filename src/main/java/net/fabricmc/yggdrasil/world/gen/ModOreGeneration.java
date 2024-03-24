@@ -3,6 +3,8 @@ package net.fabricmc.yggdrasil.world.gen;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.yggdrasil.YggdrasilMod;
+import net.fabricmc.yggdrasil.world.biome.ModBiome;
+import net.fabricmc.yggdrasil.world.dimension.ModDimension;
 import net.fabricmc.yggdrasil.world.feature.ModPlacedFeatures;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;

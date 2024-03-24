@@ -8,6 +8,7 @@ import net.fabricmc.yggdrasil.mob.ModEntities;
 import net.fabricmc.yggdrasil.mob.client.RaccoonRenderer;
 import net.fabricmc.yggdrasil.mob.client.ZombyRenderer;
 import net.fabricmc.yggdrasil.util.ModRegistries;
+import net.fabricmc.yggdrasil.world.biome.ModBiome;
 import net.fabricmc.yggdrasil.world.dimension.ModDimension;
 import net.fabricmc.yggdrasil.world.feature.ModConfiguredFeatures;
 import net.fabricmc.yggdrasil.world.gen.ModOreGeneration;
