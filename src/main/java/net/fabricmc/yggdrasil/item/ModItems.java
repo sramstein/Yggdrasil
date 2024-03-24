@@ -53,6 +53,9 @@ public class ModItems {
             new ModBootsItem(ModArmorMaterials.MITHRIL, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
 
+    public static final Item ANTARCTICITE = registerItem("antarcticite",
+            new Item(new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+
 
 
     public static final Item RACCOON_SPAWN_EGG = registerItem("raccoon_spawn_egg",

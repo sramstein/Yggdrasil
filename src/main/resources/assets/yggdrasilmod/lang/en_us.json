@@ -23,5 +23,7 @@
   "item.yggdrasilmod.mithril_leggings": "Mithril Leggings",
   "item.yggdrasilmod.mithril_boots": "Mithril Boots",
 
-  "itemGroup.yggdrasilmod.yggdrasil": "Yggdrasil Tab"
+  "itemGroup.yggdrasilmod.yggdrasil": "Yggdrasil Tab",
+  "item.yggdrasilmod.antarcticite": "Antarcticite",
+  "block.yggdrasilmod.antarcticite_block": "Antarcticite Block"
 }

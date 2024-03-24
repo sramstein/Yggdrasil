@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.yggdrasil.YggdrasilMod;
 import net.fabricmc.yggdrasil.block.custom.AncientStone;
+import net.fabricmc.yggdrasil.block.custom.AntarcticiteBlock;
 import net.fabricmc.yggdrasil.block.custom.MithrilBlock;
 import net.fabricmc.yggdrasil.block.custom.MithrilOre;
 import net.fabricmc.yggdrasil.item.ModItemGroup;
@@ -34,6 +35,9 @@ public class ModBlocks {
 
     public static final Block MITHRIL_BLOCK = registerBlock("mithril_block",
             new MithrilBlock(FabricBlockSettings.of(Material.STONE).strength(5.0f).requiresTool()), ModItemGroup.YGGDRASIL);
+
+    public static final Block ANTARCTICITE_BLOCK = registerBlock("antarcticite_block",
+            new AntarcticiteBlock(FabricBlockSettings.of(Material.STONE).strength(3.0f).requiresTool()), ModItemGroup.YGGDRASIL);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {

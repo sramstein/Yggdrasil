@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "yggdrasilmod:mithril_block"
+    "yggdrasilmod:mithril_block",
+    "yggdrasilmod:antarcticite_block"
   ]
 }

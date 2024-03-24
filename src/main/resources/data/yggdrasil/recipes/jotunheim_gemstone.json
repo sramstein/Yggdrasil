@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "yggdrasilmod:antarcticite"
+    }
+  },
+  "result": {
+    "item": "yggdrasilmod:jotunheim_gemstone"
+  }
+}
