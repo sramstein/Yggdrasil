@@ -16,6 +16,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
 
@@ -27,14 +28,14 @@ public class ModBlocks {
             new AncientStone(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
 
     public static final Block MITHRIL_ORE = registerBlock("mithril_ore",
-            new MithrilOre(FabricBlockSettings.of(Material.STONE).strength(5.0f).requiresTool()), ModItemGroup.YGGDRASIL);
-
+            new MithrilOre(FabricBlockSettings.of(Material.STONE).strength(5f).requiresTool(),
+                    UniformIntProvider.create(2, 6)), ModItemGroup.YGGDRASIL);
     public static final Block DEEPSLATE_MITHRIL_ORE = registerBlock("deepslate_mithril_ore",
-            new MithrilOre(FabricBlockSettings.of(Material.STONE).strength(6.0f).requiresTool()), ModItemGroup.YGGDRASIL);
-
+            new MithrilOre(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool()
+                    ,UniformIntProvider.create(2, 6)), ModItemGroup.YGGDRASIL);
 
     public static final Block MITHRIL_BLOCK = registerBlock("mithril_block",
-            new MithrilBlock(FabricBlockSettings.of(Material.STONE).strength(5.0f).requiresTool()), ModItemGroup.YGGDRASIL);
+            new MithrilBlock(FabricBlockSettings.of(Material.METAL).strength(5.0f).requiresTool()), ModItemGroup.YGGDRASIL);
 
     public static final Block ANTARCTICITE_BLOCK = registerBlock("antarcticite_block",
             new AntarcticiteBlock(FabricBlockSettings.of(Material.STONE).strength(3.0f).requiresTool()), ModItemGroup.YGGDRASIL);
