@@ -6,8 +6,10 @@ import net.fabricmc.yggdrasil.block.ModBlocks;
 import net.fabricmc.yggdrasil.item.ModItems;
 import net.fabricmc.yggdrasil.mob.ModEntities;
 import net.fabricmc.yggdrasil.mob.client.RaccoonRenderer;
+import net.fabricmc.yggdrasil.mob.client.ZombyRenderer;
 import net.fabricmc.yggdrasil.util.ModRegistries;
 import net.fabricmc.yggdrasil.world.dimension.ModDimension;
+import net.fabricmc.yggdrasil.world.gen.ModWorldGen;
 import net.fabricmc.yggdrasil.world.structure.ModStructures;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,7 +33,9 @@ public class YggdrasilMod implements ModInitializer {
 		ModDimension.register();
 		ModRegistries.registerModStuffs();
 		EntityRendererRegistry.register(ModEntities.RACCOON, RaccoonRenderer::new);
+		EntityRendererRegistry.register(ModEntities.ZOMBY, ZombyRenderer::new);
 		GeckoLib.initialize();
 		ModStructures.registerStructureFeatures();
+		ModWorldGen.generateModWorldGen();
 	}
 }
