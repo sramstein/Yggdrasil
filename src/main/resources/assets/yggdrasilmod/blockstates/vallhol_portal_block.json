@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "":  { "model": "minecraft:block/raw_gold_block"}
+  }
+}

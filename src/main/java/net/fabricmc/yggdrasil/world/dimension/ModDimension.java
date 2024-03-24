@@ -1,6 +1,7 @@
 package net.fabricmc.yggdrasil.world.dimension;
 
 import net.fabricmc.yggdrasil.YggdrasilMod;
+import net.fabricmc.yggdrasil.block.ModBlocks;
 import net.fabricmc.yggdrasil.item.ModItems;
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
 import net.minecraft.block.Blocks;
@@ -21,7 +22,7 @@ public class ModDimension {
         YggdrasilMod.LOGGER.debug("Registering ModDimension for " + YggdrasilMod.MOD_ID);
 
         CustomPortalBuilder.beginPortal()
-                .frameBlock(Blocks.PACKED_ICE)
+                .frameBlock(ModBlocks.JOTUNHEIM_PORTAL_BLOCK)
                 .destDimID(new Identifier("yggdrasil", "jotunheim"))
                 .tintColor(153, 204, 255)
                 .lightWithItem(ModItems.JOTUNHEIM_GEMSTONE)
@@ -29,7 +30,7 @@ public class ModDimension {
                 .registerPortal();
 
         CustomPortalBuilder.beginPortal()
-                .frameBlock(Blocks.CRIMSON_HYPHAE)
+                .frameBlock(ModBlocks.HEILHEIM_PORTAL_BLOCK)
                 .destDimID(new Identifier("yggdrasil", "helheim"))
                 .tintColor(255, 51, 51)
                 .lightWithItem(ModItems.HELHEIM_GEMSTONE)
@@ -37,7 +38,7 @@ public class ModDimension {
                 .registerPortal();
 
         CustomPortalBuilder.beginPortal()
-                .frameBlock(Blocks.RAW_GOLD_BLOCK)
+                .frameBlock(ModBlocks.VALLHOL_PORTAL_BLOCK)
                 .destDimID(new Identifier("yggdrasil", "valholl"))
                 .tintColor(224, 224, 224)
                 .lightWithItem(ModItems.VALHOLL_GEMSTONE)

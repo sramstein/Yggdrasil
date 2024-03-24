@@ -3,10 +3,7 @@ package net.fabricmc.yggdrasil.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.yggdrasil.YggdrasilMod;
-import net.fabricmc.yggdrasil.block.custom.AncientStone;
-import net.fabricmc.yggdrasil.block.custom.AntarcticiteBlock;
-import net.fabricmc.yggdrasil.block.custom.MithrilBlock;
-import net.fabricmc.yggdrasil.block.custom.MithrilOre;
+import net.fabricmc.yggdrasil.block.custom.*;
 import net.fabricmc.yggdrasil.item.ModItemGroup;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
@@ -40,8 +37,12 @@ public class ModBlocks {
     public static final Block ANTARCTICITE_BLOCK = registerBlock("antarcticite_block",
             new AntarcticiteBlock(FabricBlockSettings.of(Material.STONE).strength(3.0f).requiresTool(),
                     UniformIntProvider.create(1, 2)), ModItemGroup.YGGDRASIL);
-
-
+    public static final Block JOTUNHEIM_PORTAL_BLOCK = registerBlock("jotunheim_portal_block",
+            new JotunheimPortalBlock(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
+    public static final Block HEILHEIM_PORTAL_BLOCK = registerBlock("heilheim_portal_block",
+            new JotunheimPortalBlock(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
+    public static final Block VALLHOL_PORTAL_BLOCK = registerBlock("vallhol_portal_block",
+            new JotunheimPortalBlock(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
         return Registry.register(Registry.BLOCK, new Identifier(YggdrasilMod.MOD_ID, name), block);
