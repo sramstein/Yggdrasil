@@ -2,10 +2,8 @@ package net.fabricmc.yggdrasil.mob.custom;
 
 import net.fabricmc.yggdrasil.YggdrasilMod;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -29,15 +27,15 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 
 public class RaccoonEntity extends HostileEntity implements IAnimatable {
 
-    private AnimationFactory factory = new AnimationFactory(this);
+    private final AnimationFactory factory = new AnimationFactory(this);
     public RaccoonEntity(EntityType<? extends HostileEntity> entityType, World world) {
         super(entityType, world);
     }
 
     public static DefaultAttributeContainer.Builder setAttribute() {
         return HostileEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 100.00)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 12.0f)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 30.00)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 5.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 5.0f)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.4f);
 
@@ -45,10 +43,12 @@ public class RaccoonEntity extends HostileEntity implements IAnimatable {
     }
 
     protected void initGoals() {
-        this.goalSelector.add(0, new MeleeAttackGoal(this, 2.0, false)); // Objectif d'attaque en mêlée
-        this.goalSelector.add(2, new LookAroundGoal(this)); // Objectif de regarder autour
-        this.goalSelector.add(7, new WanderAroundFarGoal(this, 1.0)); // Objectif de vagabonder
-        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 12.0f)); // Objectif de regarder le joueur
+        this.goalSelector.add(0, new MeleeAttackGoal(this, 1.0, false));
+        this.goalSelector.add(2, new LookAroundGoal(this));
+        this.goalSelector.add(7, new WanderAroundFarGoal(this, 1.0));
+        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 12.0f));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
+        this.targetSelector.add(2, new RevengeGoal(this, new Class[0]));
     }
 
 
