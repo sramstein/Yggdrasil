@@ -2,6 +2,11 @@ package com.example;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.impl.biome.modification.BuiltInRegistryKeys;
+import net.fabricmc.yggdrasil.world.feature.ModPlacedFeatures;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.gen.feature.PlacedFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

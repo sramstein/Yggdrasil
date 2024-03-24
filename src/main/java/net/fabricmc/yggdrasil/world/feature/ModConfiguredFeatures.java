@@ -7,7 +7,7 @@ import net.minecraft.world.gen.feature.*;
 
 import java.util.List;
 
-public class ModConfiguredFeature {
+public class ModConfiguredFeatures {
     public static final List<OreFeatureConfig.Target> JOTUNHEIM_MITHRIL_ORE = List.of(
             OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, ModBlocks.MITHRIL_ORE.getDefaultState()),
             OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MITHRIL_ORE.getDefaultState()));

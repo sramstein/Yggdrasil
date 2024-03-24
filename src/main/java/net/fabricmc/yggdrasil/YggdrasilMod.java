@@ -9,6 +9,8 @@ import net.fabricmc.yggdrasil.mob.client.RaccoonRenderer;
 import net.fabricmc.yggdrasil.mob.client.ZombyRenderer;
 import net.fabricmc.yggdrasil.util.ModRegistries;
 import net.fabricmc.yggdrasil.world.dimension.ModDimension;
+import net.fabricmc.yggdrasil.world.feature.ModConfiguredFeatures;
+import net.fabricmc.yggdrasil.world.gen.ModOreGeneration;
 import net.fabricmc.yggdrasil.world.gen.ModWorldGen;
 import net.fabricmc.yggdrasil.world.structure.ModStructures;
 import org.slf4j.Logger;
@@ -28,6 +30,8 @@ public class YggdrasilMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModConfiguredFeatures.registerCongiguredFeatures();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModDimension.register();
