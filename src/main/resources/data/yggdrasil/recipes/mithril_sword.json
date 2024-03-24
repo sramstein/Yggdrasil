@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "#",
+    "|"
+  ],
+  "key": {
+    "#": {
+      "item": "yggdrasilmod:mithril"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "yggdrasilmod:mithril_sword"
+  }
+}
