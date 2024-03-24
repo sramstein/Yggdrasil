@@ -13,5 +13,15 @@
   "block.yggdrasilmod.deepslate_mithril_ore": "DeepSlate Mithril Ore",
   "block.yggdrasilmod.mithril_block": "Mithril Block",
 
+  "item.yggdrasilmod.mithril_sword": "Mithril Sword",
+  "item.yggdrasilmod.mithril_axe": "Mithril Axe",
+  "item.yggdrasilmod.mithril_hoe": "Mithril Hoe",
+  "item.yggdrasilmod.mithril_pickaxe": "Mithril Pickaxe",
+  "item.yggdrasilmod.mithril_shovel": "Mithril Shovel",
+  "item.yggdrasilmod.mithril_helmet": "Mithril Helmet",
+  "item.yggdrasilmod.mithril_chestplate": "Mithril Chestplate",
+  "item.yggdrasilmod.mithril_leggings": "Mithril Leggings",
+  "item.yggdrasilmod.mithril_boots": "Mithril Boots",
+
   "itemGroup.yggdrasilmod.yggdrasil": "Yggdrasil Tab"
 }

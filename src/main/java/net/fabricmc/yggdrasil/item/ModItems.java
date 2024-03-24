@@ -3,10 +3,12 @@ package net.fabricmc.yggdrasil.item;
 import net.fabricmc.yggdrasil.YggdrasilMod;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.yggdrasil.item.custom.ModAxeItem;
+import net.fabricmc.yggdrasil.item.custom.ModHoeItem;
+import net.fabricmc.yggdrasil.item.custom.ModPickaxeItem;
 import net.fabricmc.yggdrasil.mob.ModEntities;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SpawnEggItem;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -22,6 +24,37 @@ public class ModItems {
 
     public static final Item MITHRIL = registerItem("mithril",
             new Item(new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+
+    public static final Item MITHRIL_SWORD = registerItem("mithril_sword",
+            new SwordItem(ModToolMaterials.MITHRIL, 1, 2f,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+
+    public static final Item MITHRIL_AXE = registerItem("mithril_axe",
+            new ModAxeItem(ModToolMaterials.MITHRIL, 3, 1f,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+
+    public static final Item MITHRIL_HOE = registerItem("mithril_hoe",
+            new ModHoeItem(ModToolMaterials.MITHRIL, 0, 0f,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+    public static final Item MITHRIL_PICKAXE = registerItem("mithril_pickaxe",
+            new ModPickaxeItem(ModToolMaterials.MITHRIL, 1, 0f,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+    public static final Item MITHRIL_SHOVEL = registerItem("mithril_shovel",
+            new ShovelItem(ModToolMaterials.MITHRIL, 0, 1f,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+    public static final Item MITHRIL_HELMET = registerItem("mithril_helmet",
+            new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+    public static final Item MITHRIL_CHESTPLATE = registerItem("mithril_chestplate",
+            new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+    public static final Item MITHRIL_LEGGINGS = registerItem("mithril_leggings",
+            new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+    public static final Item MITHRIL_BOOTS = registerItem("mithril_boots",
+            new ArmorItem(ModArmorMaterials.MITHRIL, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroup.YGGDRASIL)));
+
 
 
     public static final Item RACCOON_SPAWN_EGG = registerItem("raccoon_spawn_egg",
