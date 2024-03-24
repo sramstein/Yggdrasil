@@ -1,21 +1,39 @@
 {
-  "type": "yggdrasil:jotunheim",
+  "type": "yggdrasil:valholl",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 54817,
-    "settings": "yggdrasil:jotunheim_settings",
+    "seed": 54816,
+    "settings": "yggdrasil:valholl_settings",
     "biome_source": {
       "type": "minecraft:multi_noise",
       "biomes": [
         {
-          "biome": "yggdrasil:jotunheim_plains",
+          "biome": "yggdrasil:valholl_jungle",
           "parameters": {
             "temperature": [
-              -2,
-              0
+              1,
+              2
             ],
             "humidity": [
               0,
+              1
+            ],
+            "continentalness": 0.5,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "yggdrasil:valholl_beach",
+          "parameters": {
+            "temperature": [
+              2,
+              2
+            ],
+            "humidity": [
+              1,
               2
             ],
             "continentalness": 0,
@@ -26,51 +44,15 @@
           }
         },
         {
-          "biome": "yggdrasil:jotunheim_taiga",
+          "biome": "yggdrasil:valholl_plain",
           "parameters": {
             "temperature": [
               0,
-              2
+              0.5
             ],
             "humidity": [
-              0,
-              2
-            ],
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": 0,
-            "depth": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "yggdrasil:jotunheim_ice_spike",
-          "parameters": {
-            "temperature": [
               0,
               0
-            ],
-            "humidity": [
-              -2,
-              0
-            ],
-            "continentalness": 0,
-            "erosion": 0,
-            "weirdness": 0,
-            "depth": 0,
-            "offset": 0
-          }
-        },
-        {
-          "biome": "yggdrasil:jotunheim_slopes",
-          "parameters": {
-            "temperature": [
-              -2,
-              -1
-            ],
-            "humidity": [
-              -2,
-              -1
             ],
             "continentalness": 0,
             "erosion": 0,
