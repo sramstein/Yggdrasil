@@ -39,9 +39,9 @@ public class ModBlocks {
                     UniformIntProvider.create(1, 2)), ModItemGroup.YGGDRASIL);
     public static final Block JOTUNHEIM_PORTAL_BLOCK = registerBlock("jotunheim_portal_block",
             new JotunheimPortalBlock(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
-    public static final Block HEILHEIM_PORTAL_BLOCK = registerBlock("heilheim_portal_block",
+    public static final Block HELHEIM_PORTAL_BLOCK = registerBlock("helheim_portal_block",
             new JotunheimPortalBlock(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
-    public static final Block VALLHOL_PORTAL_BLOCK = registerBlock("vallhol_portal_block",
+    public static final Block VALHOLL_PORTAL_BLOCK = registerBlock("valholl_portal_block",
             new JotunheimPortalBlock(FabricBlockSettings.of(Material.STONE).strength(-1f).nonOpaque()), ModItemGroup.YGGDRASIL);
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);

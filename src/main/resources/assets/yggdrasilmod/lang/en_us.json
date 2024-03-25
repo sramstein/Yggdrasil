@@ -10,6 +10,10 @@
 
   "block.yggdrasilmod.ancient_stone": "Ancient Stone",
   "block.yggdrasilmod.helheim_block": "Helheim's Block",
+  "block.yggdrasilmod.jotunheim_portal_block": "Jötunheim's Portal Block",
+  "block.yggdrasilmod.helheim_portal_block": "Helheim's Portal Block",
+  "block.yggdrasilmod.valholl_portal_block": "Valhöll's Portal Block",
+
 
   "item.yggdrasilmod.mithril": "Mithril",
   "block.yggdrasilmod.mithril_ore": "Mithril Ore",

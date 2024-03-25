@@ -30,7 +30,7 @@ public class ModDimension {
                 .registerPortal();
 
         CustomPortalBuilder.beginPortal()
-                .frameBlock(ModBlocks.HEILHEIM_PORTAL_BLOCK)
+                .frameBlock(ModBlocks.HELHEIM_PORTAL_BLOCK)
                 .destDimID(new Identifier("yggdrasil", "helheim"))
                 .tintColor(255, 51, 51)
                 .lightWithItem(ModItems.HELHEIM_GEMSTONE)
@@ -38,7 +38,7 @@ public class ModDimension {
                 .registerPortal();
 
         CustomPortalBuilder.beginPortal()
-                .frameBlock(ModBlocks.VALLHOL_PORTAL_BLOCK)
+                .frameBlock(ModBlocks.VALHOLL_PORTAL_BLOCK)
                 .destDimID(new Identifier("yggdrasil", "valholl"))
                 .tintColor(224, 224, 224)
                 .lightWithItem(ModItems.VALHOLL_GEMSTONE)

@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "minecraft:block/crimson_hyphae"
+    "all": "yggdrasilmod:block/helheim_portal_block"
   }
 }
