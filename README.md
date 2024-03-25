@@ -26,13 +26,13 @@ Dans ce mod, les joueurs ont pour objectif de trouver l'Arbre Yggdrasil, qui est
 
 ## Installation
 
-1. Assurez-vous d'avoir [Fabric Loader](https://fabricmc.net/use/) installé.
-2. Téléchargez la dernière version du mod depuis la section Releases.
-3. Placez le fichier JAR téléchargé dans le dossier "mods" de votre installation Minecraft.
+1. Assurez-vous d'avoir [CurseForge](https://www.curseforge.com/download/app) installé.
+2. Téléchargez la dernière version du modpack depuis la section [Releases](https://github.com/sramstein/Yggdrasil/releases).
+3. Importez le profile du modpack dans Curseforge avec fabric.
 
 ## Utilisation
 
-1. Lancez Minecraft avec le profil Fabric Loader.
+1. Lancez Minecraft avec le profil installé précédemment dans CurseForge (assurez vous que le modloader du profil soit la dernière version de Fabric).
 2. Commencez une nouvelle partie ou chargez une partie existante.
 3. Explorez le monde pour trouver l'Arbre Yggdrasil.
 4. Traversez les dimensions en activant les portails et en collectant les gemmes nécessaires.
@@ -40,6 +40,15 @@ Dans ce mod, les joueurs ont pour objectif de trouver l'Arbre Yggdrasil, qui est
 ## Contributions
 
 Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce mod, veuillez soumettre une Pull Request sur GitHub.
+
+## Créateurs
+- [@agrand2004](https://github.com/agrand2004)
+- [@kevinGLAENTZLIN](https://github.com/kevinGLAENTZLIN)
+- [@GabinP-Epitech2027](https://github.com/GabinP-Epitech2027)
+- [@sramstein](https://github.com/sramstein)
+- [@ArthurSpiller](https://github.com/ArthurSpiller)
+- [@xavier-rognon](https://github.com/xavier-rognon)
+- [@Corent1P](https://github.com/Corent1P)
 
 ## Licence
 
